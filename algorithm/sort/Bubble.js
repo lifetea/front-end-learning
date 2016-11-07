@@ -15,5 +15,7 @@ example.build('冒泡排序',function () {
             }
         }
     }
+
     console.log(arr)
+
 })
