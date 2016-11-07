@@ -9,7 +9,6 @@ example.build("块级作用域",function () {
     {
         var a = 1;
         let b = 2;
-
     }
     console.log(a)//1
     try {
@@ -99,6 +98,16 @@ example.build("暂时性死区",function () {
 })
 
 
+
+example.build('隐蔽的死区',function () {
+    // function bar(x = y, y = 2) {
+    //     return [x, y];
+    // }
+    //bar(); // 报错
+})
+
+
+
 example.build("重复赋值",function () {
     //同一个作用域不能重复赋值
     try{
@@ -140,3 +149,4 @@ example.build("块级作用域与函数声明",function () {
     }
     //浏览器运行时
 })
+
