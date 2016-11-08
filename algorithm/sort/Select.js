@@ -12,7 +12,7 @@ example.build('选择排序先排小',function () {
         let k   = i;
         for(let j = 1+i;j < len; j++){
             if(min > arr[j]){
-                k = j;
+                k = j
                 min = arr[j]
             }
         }
