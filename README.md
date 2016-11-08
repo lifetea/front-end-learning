@@ -1,2 +1,2 @@
 # front-end-daily
-froent end daily test
+front-end-daily test
