@@ -62,3 +62,35 @@ example.build('表达式解构',function () {
     console.log(b)
     console.log(c)
 })
+
+
+example.build('数组嵌套解构',function () {
+    let [a,[b]] = [1,[2]]
+    console.log(a,b)
+})
+
+
+example.build('函数返回解构',function () {
+    function f() {
+        return [1,2]
+    }
+    let [a,b] = f()
+    console.log(a,b)
+})
+
+
+example.build('忽略返回值',function () {
+    function f() {
+        return [1,2,3]
+    }
+    let [a,,c] = f()
+    console.log(a,c)
+})
+
+
+example.build('正则返回解构',function () {
+    var url = "https://developer.mozilla.org/en-US/Web/JavaScript";
+    let reg = /^(\w+)\:\/\/([^\/]+)\/(.*)$/ig
+    let res = reg.exec(url)
+    console.log(res)
+})
