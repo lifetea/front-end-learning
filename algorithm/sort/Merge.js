@@ -6,7 +6,7 @@
 
 const example = require('../../util/Example')
 
-example.build('归并排序',function () {
+example.build('归并排序(递归)',function () {
 
     let arr = [3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48]
 
