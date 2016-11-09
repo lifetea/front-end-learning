@@ -59,6 +59,17 @@ example.build('解构默认值',function () {
 })
 
 
+example.build('嵌套解构',function () {
+
+    let {foo:{bar}} = {foo:{bar:'hello'}}
+
+    console.log(bar)
+
+    // 报错 Cannot match against 'undefined' or 'null'.
+    // var {foo: {bar}} = {baz: 'baz'};
+})
+
+
 example.build('解构默认参数',function () {
     
     let f = function ({a=1,b={c:2}} = {}) {
@@ -94,4 +105,12 @@ example.build('解构函数参数',function () {
     getFirstName(user)
 
     getLastName(user)
+})
+
+
+example.build('方法解构',function () {
+
+    let { log, sin, cos } = Math;
+
+    console.log(sin)
 })
