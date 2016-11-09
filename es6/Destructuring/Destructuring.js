@@ -1,7 +1,7 @@
 /**
  * Created by lifetea on 2016/11/7.
  */
-const example  = require('../util/Example')
+const example  = require('../../util/Example')
 
 example.build('赋值',function () {
     var [a, b, c] = [1, 2, 3];
@@ -14,7 +14,7 @@ example.build('赋值',function () {
 
 
 example.build('解构模式',function () {
-    var [a, b, ...c] = [1, 2, 3];
+    var [a, b ,...c] = [1, 2, 3];
     console.log(c)
 })
 
