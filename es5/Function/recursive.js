@@ -20,3 +20,16 @@ example.build('阶乘函数',function () {
     console.log(res)
 
 })
+
+
+example.build('最大调用栈',function () {
+    var cnt = 0;
+    try {
+        (function() {
+            cnt++;
+            arguments.callee();
+        })();
+    } catch(e) {
+        console.log(e.message, cnt);
+    }
+})
