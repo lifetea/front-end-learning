@@ -10,9 +10,10 @@ example.build('插入排序数组',function () {
     for(let [i,len] = [1,arr.length];i < len;i++){
         for(let j = i; j > 0;j--){
             if(arr[j] < arr[j-1]){
-               let temp = arr[j]
-                arr[j]  = arr[j-1]
-               arr[j-1] = temp
+                [arr[j],arr[j-1]] = [arr[j-1],arr[j]]
+            }else{
+                //找打合适位置退出循环
+                break
             }
         }
     }
