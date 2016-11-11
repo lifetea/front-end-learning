@@ -6,10 +6,18 @@ const example  =  require('../../util/Example')
 
 example.build('匹配0个或多个 *',function () {
     {
-        let reg = /\w*\b/
-        let str = 'hello world'
+        //贪心
+        let reg = /<.*>/
+        let str = '<p><span>hello world</span></p>'
         let res = reg.exec(str)
-        console.log(res)
+        console.log('贪心',res)
+    }
+    {
+        //非贪心
+        let reg = /<.*?>/
+        let str = '<p><span>hello world</span></p>'
+        let res = reg.exec(str)
+        console.log('非贪心',res)
     }
     {
         let reg = /\w{0,}\b/
@@ -21,6 +29,13 @@ example.build('匹配0个或多个 *',function () {
 
 
 example.build('匹配1个或多个 +',function () {
+    {
+        //贪心
+        let reg = /<.+>/
+        let str = '<p><span>hello world</span></p>'
+        let res = reg.exec(str)
+        console.log('贪心',res)
+    }
     {
         let reg = /\w+\b/
         let str = 'hello world'
@@ -72,6 +87,16 @@ example.build('匹配n到多个 {2,}',function () {
 
 
 example.build('匹配n个 {2}',function () {
+    {
+        let reg = /l{2}/
+        let str = 'helllllo world'
+        let res = reg.exec(str)
+        console.log(res)
+    }
+})
+
+
+example.build('非贪心匹配',function () {
     {
         let reg = /l{2}/
         let str = 'helllllo world'
