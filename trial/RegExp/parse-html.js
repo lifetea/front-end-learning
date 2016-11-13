@@ -23,3 +23,10 @@ example.build('解析href',function () {
     // console.log(res)
 })
 
+
+example.build('解析href',function () {
+    let str =`<a title="软件测试面试题" href="http://www.mianwww.com/html/category/it-interview/softwaretest" target="_blank">软件测试面试题</a>`
+    let reg = /(?:[hH][rR][eE][fF]\s*=\s*['"]\s*)([^'"]*)/
+    let [,href] = str.match(reg)
+    console.log(href)
+})
