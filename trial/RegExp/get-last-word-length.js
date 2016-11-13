@@ -7,7 +7,7 @@ const example = require('../../util/Example')
 
 example.build('获取字符串最后单词长度(正则)',function () {
     let str = 'hello world '
-    let reg = /(\s*)(\w*)\1$/i
+    let reg = /(\W*)(\w*)\1$/i
     let [,,world] = reg.exec(str)
     let len = world.length
     console.log(len)
