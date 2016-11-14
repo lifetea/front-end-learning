@@ -15,8 +15,35 @@ example.build('默认参数',function () {
 })
 
 example.build('解构默认参数',function () {
-    function log({x=2,y=4}) {
-        console.log(x,y)
+    {
+        console.log('默认解构一')
+        let log = function ({x=2,y=4}) {
+            console.log(x,y)
+        }
+        log({x:1})
+        log({z:5})
+        log({})
+        //log() error
     }
-    log({x:3,})
+    {
+        console.log('默认解构二')
+        let log = function ({x=2,y=4} = {}) {
+            console.log(x,y)
+        }
+        log({x:1})
+        log({z:5})
+        log({})
+        log()
+    }
+    {
+        console.log('默认解构三')
+        let log = function ({x,y} = {x:2,y:4}) {
+            console.log(x,y)
+        }
+        log({x:1})
+        log({z:5})
+        log({})
+        log()
+    }
+
 })
