@@ -1,2 +1,2 @@
 # front-end-daily
-front-end-daily test
+前端日常练习
