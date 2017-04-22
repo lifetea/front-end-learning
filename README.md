@@ -1,44 +1,31 @@
 # front-end-learning 前端学习课程
 
-通过 vue@2.0^  webpack@^2.1.0 来搭建后台管理
-
     author :lifetea
     mail   :494886251@qq.com
     wechat :weiweipuzi
 
     如果这个教程对您有所帮助  给一个star吧  - .. -
 
-#### 消息中心
 
 
 ##目录
-* 1.第二阶段:原生JavaScript开发及网页常见特效案例实战（15节课)
-    * [JavaScript概述引入方式语法关键字及变量](./lesson/js/01/vue.md)
-    * [JavaScript基本数据类型基本运算符赋值运算条件,循环,流程语句,运算符](./doc/1/webpack.md)     
-    * [JavaScript中的语句流程控制语句循环语句String类的方法Array的方法](./doc/1/babel.md)
-    * [安装loader](./doc/1/loader.md)
-    * [安装gulp](./doc/1/gulp.md)
-* 2.[第二步配置环境](#Config)
-    * [配置webpack](./doc/2/webpack.md)
-    * [配置gulp](./doc/2/gulp.md)
-* 3.[第三步构建入口](#App)
-    * [webpack入口和输出](./doc/3/main.md)
-    * [创建index.html](./doc/3/main.md)
-    * [创建main.js](./doc/3/main.md)
-    * [创建Main.vue](./doc/3/main.md)
-* 4.[第四步搭建路由](#Route)
-    * [Vue全局化](./doc/4/webpack.md)
-    * [创建配置路由](./doc/4/router.md)
-* 5.[第五步登录页面](#Login)
-    * [登录页面](./doc/5/login.md)
-    * [惰性加载](./doc/5/gulp.md)
-    * [更新配置](./doc/5/gulp.md)    
-    * [登录授权](./doc/5/gulp.md)
-    * [退出登录](./doc/5/gulp.md)
-* 6.[第六步页面布局](#Layout)
-    * [配置webpack](./doc/6/webpack.md)
-    * [配置gulp](./doc/6/gulp.md)
-
+* 二.第二阶段:原生JavaScript开发及网页常见特效案例实战（15节课)
+    * [1.JavaScript概述引入方式语法关键字及变量](./lesson/js/01/vue.md)
+    * [2.JavaScript基本数据类型基本运算符赋值运算条件,循环,流程语句,运算符](./doc/1/webpack.md)     
+    * [3.JavaScript中的语句流程控制语句循环语句String类的方法、Array的方法](./doc/1/webpack.md)     
+    * [4.函数的基本概念函数的高级用法：递归等Math，](./doc/1/webpack.md)     
+    * [5.数组的相关API：排序添加元素删减元素等原生](./doc/1/webpack.md) 
+    * [6.正则表达式，JS异常处理，基础综合练习](./doc/1/webpack.md) 
+    * [7.内置对象、面向对象与原型文档对象模型](./doc/1/webpack.md) 
+    * [8.DOM操作表格、样式、元素尺寸、位置等](./doc/1/webpack.md) 
+    * [9.事件入门、事件对象、事件绑定及深入](./doc/1/webpack.md) 
+    * [10.碰壁反弹效果、无缝滚动效果、轮播效果](./doc/1/webpack.md) 
+    * [11.不同数据类型数据的操作方法](./doc/1/webpack.md) 
+    * [12.构造函数的基本知识，闭包、面向对象](./doc/1/webpack.md) 
+    * [13.作用域的基本知识、原型与原型链；](./doc/1/webpack.md) 
+    * [14.WEB开发综合案例引入原生项目](./doc/1/webpack.md) 
+    * [15.前端常用库及框架介绍](./doc/1/webpack.md) 
+                          
 
 
 第二阶段:原生JavaScript开发及网页常见特效案例实战（15节课）
