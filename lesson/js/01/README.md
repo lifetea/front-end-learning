@@ -1,4 +1,4 @@
-##Javascript的前生今世
+## Javascript的前生今世
 
 
 [博客地址](http://blog.csdn.net/lisiur/article/details/52087093)
