@@ -1,37 +1,34 @@
-## Javascript的前生今世
-
-
-[博客地址](http://blog.csdn.net/lisiur/article/details/52087093)
+## [Javascript的前生今世](http://blog.csdn.net/lisiur/article/details/52087093)
 
     多样化:typescript coffeescript
     领域:小程序 跨平台App 游戏
 
 
-##[2.前端框架的演变](https://github.com/ruanyf/jstraining/blob/master/docs/history.md)
+## [2.前端框架的演变](https://github.com/ruanyf/jstraining/blob/master/docs/history.md)
 参考地址
     YUI Prototype.js Jquery
     
 
-##[3.前端名人堂](http://code.csdn.net/news/2820990)
+## [3.前端名人堂](http://code.csdn.net/news/2820990)
     [尤雨溪](https://github.com/yyx990803),阮一峰，赵百万，Winter等等
     
     
-##4.前端的工具
+## 4.前端的工具
     git babel  gulp  webpack  webstorm sublime text nodejs nginx等等。。。。
     
 
 
-##5.创建一个JS
+## 5.创建一个JS
     hello world
     
 
-##6.语法和变量
+## 6.语法和变量
 
 
-##7.课堂练习
+## 7.课堂练习
 
 
-#####第一题
+##### 第一题
     
     (function () {  
         return typeof arguments;  
@@ -41,7 +38,7 @@
     B. "array"
     C. "arguments"
     D. "undefined"
-#####第二题    
+##### 第二题    
     var f = function g() {
         return 23;
     };
@@ -52,7 +49,7 @@
     C. "function"
     D. Eorror
     
-#####第三题    
+##### 第三题    
     (function (x) {
             delete x;
            return x;
@@ -63,7 +60,7 @@
     C. undefined
     D. Error
     
-#####第四题     
+##### 第四题     
     var y = 1,
         x = y = typeof x;
     x;
@@ -75,7 +72,7 @@
      
      
      
-#####第五题    
+##### 第五题    
      (function f(f) {
          return typeof f();
      })(function () {
@@ -88,7 +85,7 @@
      D. Error
      
      
-#####第六题     
+##### 第六题     
      var foo = {
          bar: function () {
              return this.baz;
@@ -106,7 +103,7 @@
      
      
      
-#####第七题      
+##### 第七题      
      var foo = {
          bar: function () {
                 return this.baz;
@@ -120,7 +117,7 @@
      C. "number"
      D. "function"
      
-#####第八题     
+##### 第八题     
      var f = (function f() {
          return "1";
      }, function g() {
@@ -134,7 +131,7 @@
      D. "undefined"
      
      
-#####第九题     
+##### 第九题     
      var x = 1;
      if (function f() {}) {
          x += typeof f;
@@ -157,7 +154,7 @@
      D. "object"
      
      
-#####第十一题     
+##### 第十一题     
      (function (foo) {
          return typeof foo.bar;
      })({
@@ -171,7 +168,7 @@
      C、“number” 
      D、Error
      
-#####第十二题     
+##### 第十二题     
      (function f() {
          function f() {
              return 1;
@@ -187,7 +184,7 @@
      C、Error (e.g. “Too much recursion”) 
      D、undefined
      
-#####第十三题     
+##### 第十三题     
      function f() {
          return f;
      }
