@@ -1,9 +1,14 @@
-##[1.Javascript的前生今世](http://blog.csdn.net/lisiur/article/details/52087093)
+##1.Javascript的前生今世
+
+
+[博客地址](http://blog.csdn.net/lisiur/article/details/52087093)
+
     多样化:typescript coffeescript
     领域:小程序 跨平台App 游戏
 
 
 ##[2.前端框架的演变](https://github.com/ruanyf/jstraining/blob/master/docs/history.md)
+参考地址
     YUI Prototype.js Jquery
     
 
@@ -24,6 +29,7 @@
 
 
 ##7.课堂练习
+
 
 #####第一题
     
