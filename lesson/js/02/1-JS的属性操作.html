@@ -17,24 +17,24 @@
 		元素.属性名 = 新的值
 		
 */
-window.onload = function (){
-	var oBtn = document.getElementById('btn1');
-	var oText = document.getElementById('text1');
-	var oSelect = document.getElementById('select1');
-
-	oBtn.onclick = function (){
-		// alert(oBtn.value);		// '按钮'
-		// alert( oText.value );
-		// alert( oSelect.value );
-		
-		// 字符串连接
-		// oText.value    oSelect.value
-		// '刘伟' +  '北京'	 =>	'刘伟北京'
-		// '刘伟' + '在' + '北京'	 =>	'刘伟在北京'
-		
-		alert(oText.value + ' 在 ' + oSelect.value);
-	};
-};
+//window.onload = function (){
+//	var oBtn = document.getElementById('btn1');
+//	var oText = document.getElementById('text1');
+//	var oSelect = document.getElementById('select1');
+//
+//	oBtn.onclick = function (){
+//		// alert(oBtn.value);		// '按钮'
+//		// alert( oText.value );
+//		// alert( oSelect.value );
+//
+//		// 字符串连接
+//		// oText.value    oSelect.value
+//		// '刘伟' +  '北京'	 =>	'刘伟北京'
+//		// '刘伟' + '在' + '北京'	 =>	'刘伟在北京'
+//
+//		alert(oText.value + ' 在 ' + oSelect.value);
+//	};
+//};
 </script>
 
 </head>
@@ -49,5 +49,25 @@ window.onload = function (){
 </select>
 <input id="btn1" type="button" value="按钮" />
 
+<script type="text/javascript">
+    //当这个JS文件加载好之后立即执行
+    (function () {
+        //获取btn节点
+        var btn = document.getElementById("btn1");
+        // text节点
+        var text = document.getElementById("text1");
+        // 获取select 节点
+        var select = document.getElementById("select1");
+
+        //给btn 添加事件
+        btn.addEventListener("click",function () {
+            //获取value
+            var textVal     = text.value
+            var selectVal   = select.value
+            //弹出提示框 里面是内容
+            alert(textVal+selectVal)
+        })
+    })()
+</script>
 </body>
 </html>

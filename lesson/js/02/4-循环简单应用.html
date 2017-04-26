@@ -6,39 +6,72 @@
 <style>
 li { height:30px; border-bottom:1px solid #333; }
 </style>
-<script>
-window.onload = function (){
-	var oUl = document.getElementById('list');
-	var aLi = oUl.getElementsByTagName('li');
-	var arr = [ '今天', '明天', '后天' ];
-	var len = arr.length;
-	
-	/*
-	aLi[0].onclick = function (){ alert(1); };
-	aLi[1].onclick = function (){ alert(1); };
-	aLi[2].onclick = function (){ alert(1); };
-	*/
-	// aLi.onclick = function (){ alert(1); };
-	
-	for( var i=0; i<len; i++ ){
-	
-		aLi[i].innerHTML = arr[i];
-		
-		aLi[i].onclick = function (){
-			// alert(i);   i => 3
-		};
-	}
-};
-</script>
+<!--<script>-->
+<!--window.onload = function (){-->
+	<!--var oUl = document.getElementById('list');-->
+	<!--var aLi = oUl.getElementsByTagName('li');-->
+	<!--var arr = [ '今天', '明天', '后天' ];-->
+	<!--var len = arr.length;-->
+	<!---->
+	<!--/*-->
+	<!--aLi[0].onclick = function (){ alert(1); };-->
+	<!--aLi[1].onclick = function (){ alert(1); };-->
+	<!--aLi[2].onclick = function (){ alert(1); };-->
+	<!--*/-->
+	<!--// aLi.onclick = function (){ alert(1); };-->
+	<!---->
+	<!--for( var i=0; i<len; i++ ){-->
+	<!---->
+		<!--aLi[i].innerHTML = arr[i];-->
+		<!---->
+		<!--aLi[i].onclick = function (){-->
+			<!--// alert(i);   i => 3-->
+		<!--};-->
+	<!--}-->
+<!--};-->
+<!--</script>-->
 </head>
 
 <body>
-
 <ul id="list">
-	<li></li>
+	<li>
+		hello world
+	</li>
 	<li></li>
 	<li></li>
 </ul>
+<script type="text/javascript">
+	//js代码加载好之后立即执行
+	(function () {
+	    //获取列表节点
+		var ul = document.getElementById("list")
+		//定义了一个数组
+		var arr =  [ '今天', '明天', '后天','大后天']
 
+		//for循环遍历
+		for(var i= 0;i<arr.length;i++){
+		    console.log(arr[i])
+			//if 语句
+			if(i%2 == 0){
+                var li = document.createElement("li")
+                var node = document.createTextNode(arr[i])
+                li.appendChild(node)
+                ul.appendChild(li)
+			}
+		}
+		//forEach遍历方式
+		arr.forEach(function (ele,i) {
+		    console.log(ele,i)
+		})
+
+		//es6 遍历
+		arr.forEach(ele=>{console.log(ele)})
+
+		//三木运算
+		var value =  (true &&  true) ? 1 : 2
+		console.log(value)
+
+    })()
+</script>
 </body>
 </html>
