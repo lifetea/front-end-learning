@@ -11,7 +11,7 @@
 * 二.第二阶段:原生JavaScript开发及网页常见特效案例实战（15节课)
     * [1.JavaScript概述引入方式语法关键字及变量](./lesson/js/01)
     * [2.JavaScript基本数据类型基本运算符赋值运算条件,循环,流程语句,运算符](./lesson/js/02)     
-    * [3.JavaScript中的语句流程控制语句循环语句String类的方法、Array的方法](./doc/1/webpack.md)     
+    * [3.JavaScript中的语句流程控制语句循环语句String类的方法、Array的方法](./lesson/js/03)     
     * [4.函数的基本概念函数的高级用法：递归等Math，](./doc/1/webpack.md)     
     * [5.数组的相关API：排序添加元素删减元素等原生](./doc/1/webpack.md) 
     * [6.正则表达式，JS异常处理，基础综合练习](./doc/1/webpack.md) 
